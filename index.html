@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens</title>
+    <!--Importa o arquivo css do Bootstrap versão 4.5.2 p/ aplicar estilos prontos de layout, botoes , carrossel... entre outros-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Conecta o css externo com o nosso HTML-->
+    <link rel="stylesheet" href="style.css">
+    <!--Importa o Popper.js , uma biblioteca que ajuda no posicionamento "correto" de elementos como menus, dropdown (listas suspensas) e outros elementos em nosso projeto-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!--Importa o JavaScript do Bootstrap versão 4.5.2 ativando os componentes interativos como por ex: do carrossel de imagens-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+
+<body>
+    <h1>Preserve a Natureza – Nosso Planeta, Nosso Dever</h1>
+    <p>A natureza é a nossa casa e fonte de vida. Cada árvore, animal e gota de água tem um papel essencial no
+        equilíbrio do planeta. Este site convida você a observar, refletir e se encantar com a beleza do mundo natural.
+        Explore os carrosséis de imagens e vídeos, aprenda com cada exemplo e descubra formas de preservar o que temos
+        de mais precioso: a vida em todas as suas formas.</p>
+    <hr>
+    <center>
+        <!--CARROSSEL 1 - PASSAGEM AUTOMÁTICA-->
+        <!--ATRIBUTOS:
+        class="carousel slide - HABILITA O EFEITO DE TRANSIÇÃO ENTRE AS IMAGENS
+        data-ride="carousel - AVISA A PAGINA WEB QUE , ASSIM QUE FOR ABERTA DEVE INICIAR A ANIMAÇÃO DO SLIDE.
+        data-interval="3000" - DEFINE O TEMPO DE INTERVALO ENTRE OS SLIDES EM MILISSEGUNDOS.-->
+        <div id="carrossel1-slides" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <!--A DIV ABAIXO CONTÉM TODOS OS SLIDES DO CARROSSEL, O QUE DETERMINA ISSO PÉ O ATRIBUTO carousel-inner DA CLASS-->
+            <div class="carousel-inner">
+                <!--AGORA TEREMOS AS DIVS QUE CONTERÃO AS IMAGENS-->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" height="500px" src="img/floresta1.jpg" alt="">
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" height="500px" src="img/floresta2.jpg" alt="">
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" height="500px" src="img/leopardo.jpg" alt="">
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" height="500px" src="img/urso.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
